@@ -8,8 +8,6 @@ import cookieParser from 'cookie-parser';
 import path from 'path';
 dotenv.config();
 
-const MONGO_URI = "mongodb+srv://humairaashiq54_db_user:rFPAL6PINZliu6F4@mern-estate.txl9bpp.mongodb.net/?retryWrites=true&w=majority";
-
 mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB Connected "))
   .catch((err) => console.log("MongoDB Error:", err.message));
